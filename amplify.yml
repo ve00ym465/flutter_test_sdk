@@ -9,7 +9,7 @@ frontend:
     build:
       commands:
         - flutter build web --release
-        - cp my_flutter_sdk.zip build/web/
+        - cp foregroundservice.zip build/web/
   artifacts:
     baseDirectory: build/web
     files:
