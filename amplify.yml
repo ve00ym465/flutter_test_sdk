@@ -5,11 +5,11 @@ frontend:
       commands:
         - git clone https://github.com/flutter/flutter.git -b stable
         - export PATH=$PATH:`pwd`/flutter/bin
-        - flutter doctor
         - flutter pub get
     build:
       commands:
         - flutter build web --release
+        - cp my_flutter_sdk.zip build/web/
   artifacts:
     baseDirectory: build/web
     files:
